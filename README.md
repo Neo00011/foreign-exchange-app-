@@ -1,17 +1,34 @@
-# Döviz Kurları Takip ve Veri Çekme Uygulaması
+# Currency Exchange Rate Data Fetcher
+This Python application fetches real-time currency exchange rates (e.g., USD, EUR, GBP) using a financial API. It processes this data and displays it directly on the console. This tool is designed for anyone needing quick access to up-to-date currency values.
 
-Bu proje, Python kullanarak belirlenen döviz kurlarının (örneğin USD, EUR, GBP) bir finansal API aracılığıyla çekilmesini, işlenmesini ve konsolda gösterilmesini sağlar. Yazılım bilgisi olmayan işletmelerin dahi anlık veya geçmiş döviz verilerini takip edebilmesi için tasarlanmıştır.
+# What It Does
+Fetches Live Exchange Rates: Automatically retrieves the most current buy/sell rates for specified currencies (like USD, EUR, GBP) via a reliable financial API.
 
-## Ne Yapar?
+API Integration: Demonstrates robust integration with third-party APIs for accurate and timely data access.
 
-* **Güncel Döviz Kurları Çekimi:** Belirtilen para birimlerinin (örneğin Dolar, Euro, Sterlin) en güncel alış/satış kurlarını otomatik olarak çeker.
-* **API Entegrasyonu:** Güvenilir bir finansal veri sağlayıcının API'sini kullanarak doğru ve güncel verilere erişim sağlar. (NOT: Bu projede API anahtarı güvenliği için `.env` dosyası kullanılmaktadır.)
-* **Konsol Çıktısı:** Çekilen döviz verilerini okunaklı bir formatta doğrudan Python konsolunda görüntüler.
+Console Output: Displays the fetched currency data in a clear, readable format directly in the Python console.
 
-## Neden Önemli?
+# Why Is This Important?
+Current currency exchange rates are critical for businesses and individuals making decisions related to pricing, cost analysis, international trade, and investments. This application provides:
 
-İşletmeler ve bireyler için döviz kurları, fiyatlandırma, maliyet analizi, uluslararası ticaret ve yatırım kararları açısından kritik öneme sahiptir. Bu uygulama:
+Time Savings: Eliminates the need to manually track currency rates.
 
-* **Zaman Kazandırır:** Manuel olarak döviz kurlarını takip etme zahmetini ortadan kaldırır.
-* **Doğruluk Sağlar:** API'ler aracılığıyla doğrudan kaynaklardan güvenilir ve güncel veriye ulaşılır.
-* **Anlık Veri Erişimi:** En güncel döviz bilgilerine hızlıca ulaşmanızı sağlar.
+Accuracy: Ensures access to reliable and current data directly from API sources.
+
+Instant Access: Offers immediate visibility into the latest currency information.
+
+# Technologies Used
+Python: The primary programming language used for the application.
+
+requests Library: Used for sending HTTP requests to the API and receiving data.
+
+python-dotenv Library: For securely managing sensitive information like API keys.
+
+# How It Works
+The application sends a request to the financial data API.
+
+It receives the currency exchange rate data, typically in JSON format, from the API.
+
+The data is then processed and formatted.
+
+Finally, the structured currency exchange rates are printed directly to the console.
